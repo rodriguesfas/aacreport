@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=AACReport
+Comment=Run Server
+Exec=/home/rodriguesfas/Projetos/Mestrado/aacreport/run
+Icon=konsole
+Terminal=true
+Type=Application
+Name[en_US]=AACReport
+Name[pt_BR]=AACReport
