@@ -36,7 +36,7 @@ app.get("/", function(req, res) {
       error: null
     });
 
-    console.log(JSONObj);
+    //console.log(JSONObj);
   } else {
     res.render("index", { report: null, error: "Ohh não :(" });
   }
@@ -88,7 +88,7 @@ io.on("connection", function(socket) {
  * Run Pyhton
  */
 var spawn = require("child_process").spawn,
-  py = spawn("python", ["script/childes-thomas.py"]),
+  py = spawn("python", ["script/aacreport.py"]),
   data = "",
   jsonData = "";
 
