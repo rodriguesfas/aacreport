@@ -31,9 +31,9 @@ import pandas as pd
 dataset = '/home/rodriguesfas/Mestrado/aacreport/dataset/corpora/childes/Eng-UK-MOR/Barbara/sentence_Belfast_barb01.txt'
 
 # loard corpus
-# corpus_root = open(dataset).read()
+corpus_root = open(dataset).read()
 # corpus_root = pd.read_fwf(dataset)
-corpus_root = pd.read_csv(dataset)
+# corpus_root = pd.read_csv(dataset)
 
 
 '''
@@ -84,6 +84,15 @@ def ClassGrammatical():
 def SaveCSV():
     words_class_grammatical = ClassGrammatical()
     words_frequency = WordsFrequency()
+
+    df_data = {
+        'words_class_grammatical': [words_class_grammatical],
+        'words_frequency': [words_frequency]
+    }
+
+    df = pd.DataFrame(df_data)
+
+    print(df)
 
 
 
@@ -156,4 +165,4 @@ if __name__ == '__main__':
 
     # Envia os dados para o servidor.
     #print(FormatJSON())
-    print(FormatJSON())
+    print(SaveCSV())
