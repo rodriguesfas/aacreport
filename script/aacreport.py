@@ -164,5 +164,5 @@ def FormatJSON():
 if __name__ == '__main__':
 
     # Envia os dados para o servidor.
-    #print(FormatJSON())
-    print(SaveCSV())
+    print(FormatJSON())
+    #print(SaveCSV())
