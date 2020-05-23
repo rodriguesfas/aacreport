@@ -167,7 +167,7 @@ st.header("Properties by number of reviews")
 st.write(
     "Enter a range of numbers in the sidebar to view properties whose review count falls in that range."
 )
-'''
+"""
 minimum = st.sidebar.number_input("Minimum", min_value=0)
 maximum = st.sidebar.number_input("Maximum", min_value=0, value=5)
 if minimum > maximum:
@@ -185,7 +185,7 @@ else:
             "price",
         ]
     ]
-'''
+"""
 
 st.write(
     "486 is the highest number of reviews and two properties have it. Both are in the East Elmhurst \

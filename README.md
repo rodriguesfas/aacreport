@@ -15,6 +15,10 @@ AAC Report Peformance
 
     mkdocs serve
 
+# Slider
+
+    https://docs.google.com/presentation/d/1kxC3rpvv1cvr2nDFPSQnU2wYkc5YHDSuDrw3BKVvtHs/edit#slide=id.p
+
 # Base
 
 https://www.cboard.io/
