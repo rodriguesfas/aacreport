@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/rodriguesfas/anaconda3/bin/python"
+    "python.pythonPath": "/home/fasr/Developer/aacreport/.venv/bin/python3.8",
+    "python.formatting.provider": "black"
 }

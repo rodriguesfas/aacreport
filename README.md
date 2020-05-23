@@ -1,17 +1,12 @@
 # AAC Report
 AAC Report Peformance
 
-# Install
-npm install
+# Base
 
-# Run
-node-dev server.js
-
-# Start via icon
-Salve o arquivo aacreport.desktop em: $HOME/.local/share/applications/
-
-Dê permissão de execurção ao script.
-chmod +x start.sh
+https://www.cboard.io/
+https://github.com/cboard-org/cboard
+https://exploreaac.com/
+https://realizelanguage.com/info/
 
 # Tutorial
 [](http://www.nltk.org/howto/childes.html)
@@ -27,6 +22,3 @@ chmod +x start.sh
  
 # Chatter
 [Converte Corpus .CHAT para .XML](https://talkbank.org/software/chatter.html)
-
-# Crédits
-[EJS](http://ejs.co)
