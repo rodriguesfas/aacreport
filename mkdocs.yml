@@ -1,0 +1,10 @@
+site_name: AACReport Docs
+theme:
+    favicon: assets/images/favicon.svg
+    logo: assets/images/logo.svg
+    name: material
+    palette:
+        primary: deep orange
+        accent: indigo
+    repo_name: squidfunk/mkdocs-material
+    repo_url: 

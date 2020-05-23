@@ -1,12 +1,28 @@
 # AAC Report
 AAC Report Peformance
 
+# Docs
+
+    git clone 
+
+    cd aacreport
+
+    virtualenv .venv
+
+    source .venv/bin/activate
+
+    pip install -r requirements.txt
+
+    mkdocs serve
+
 # Base
 
 https://www.cboard.io/
 https://github.com/cboard-org/cboard
 https://exploreaac.com/
 https://realizelanguage.com/info/
+
+https://rehab.jmir.org/2018/2/e14/
 
 # Tutorial
 [](http://www.nltk.org/howto/childes.html)
