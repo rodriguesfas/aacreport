@@ -5,6 +5,10 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+
+import matplotlib.pyplot as plt
+import numpy as np
+
 from aacreport.analysis import Analysis
 
 
@@ -18,6 +22,8 @@ analysi = Analysis(path_corpus)
 def get_report() -> dict:
     report = analysi.FormatJSON()
     return report
+
+report = get_report()
 
 
 @st.cache
@@ -56,23 +62,20 @@ st.dataframe(df.head())
 
 st.header("Report")
 st.markdown("> Result Json Data.")
-st.json(get_report())
+st.json(report)
 
 
 st.header("Frequent words")
 st.write("")
 
-dfj = pd.DataFrame.from_dict(get_report())
+dfjson = pd.DataFrame(report['frequency_of_words'])
 
-values = st.sidebar.slider(
-    "Price range",
-    float(dfj.freq.min()),
-    float(dfj.freq.clip(upper=1000.0).max()),
-    (50.0, 300.0),
-)
-f = px.histogram(
-    df.query(f"price.between{values}"), x="price", nbins=15, title="Price distribution"
-)
-f.update_xaxes(title="Price")
-f.update_yaxes(title="No. of listings")
-st.plotly_chart(f)
+arr = [dfjson['word'][:10], dfjson['freq']]
+plt.hist(arr, bins=20)
+st.pyplot()
+
+st.markdown("## Party time!")
+st.write("Yay! You're done with this tutorial of Streamlit. Click below to celebrate.")
+btn = st.button("Celebrate!")
+if btn:
+    st.balloons()
