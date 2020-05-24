@@ -11,7 +11,7 @@ AAC Report Peformance
 
     source .venv/bin/activate
 
-    pip install -r requirements.txt
+    pip install -r requirement.txt
 
     mkdocs serve
 
